@@ -1,0 +1,24 @@
+{
+  "name": "phantom-selenium",
+  "version": "1.0.0",
+  "description": "Automates accessing web sites to fetch details and sends a sms if details change.",
+  "main": "main.js",
+  "dependencies": {
+    "pm2": "^1.0.0",
+    "selenium-webdriver": "^2.48.2",
+    "twilio": "^3.3.0-edge"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "4.2.6"
+  },
+  "author": "Ankur Roy Chowdhury",
+  "license": "ISC",
+  "keywords": [
+    "phantomjs",
+    "selenium-webdriver"
+  ]
+}
