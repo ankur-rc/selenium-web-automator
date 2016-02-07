@@ -5,7 +5,7 @@ var maxMemory = process.env.WEB_MEMORY || 128; // " " "
 
 pm2.connect(function () {
     pm2.start({
-        script: 'automator.js',
+        script: 'phantom-automator.js',
         name: 'selenium-web-automator', // ----> THESE ATTRIBUTES ARE OPTIONAL:
         exec_mode: 'fork', // ----> https://github.com/Unitech/PM2/blob/master/ADVANCED_README.md#schema
         //instances: 1,
