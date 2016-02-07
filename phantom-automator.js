@@ -142,7 +142,4 @@ http.createServer(function (request, response) {
     console.log("Server created....");
 }).listen(process.env.PORT || 5000);
 
-setInterval(function () {
-    console.log("Rebinding to port...");
-}, 30000);
 executeAutomationScript();
