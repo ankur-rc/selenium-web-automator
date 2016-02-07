@@ -136,6 +136,12 @@ eventEmitter.on('kill_driver', function () {
     setInterval(executeAutomationScript, 3600000);
 });
 
+var http = require('http');
+
+http.createServer(function (request, response) {
+    console.log("Server created....");
+}).listen(process.env.PORT || 5000);
+
 setInterval(function () {
     console.log("Rebinding to port...");
 }, 30000);
