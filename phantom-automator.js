@@ -136,10 +136,10 @@ eventEmitter.on('kill_driver', function () {
     setInterval(executeAutomationScript, 3600000);
 });
 
+executeAutomationScript();
+
 var http = require('http');
 
 http.createServer(function (request, response) {
     console.log("Server created....");
 }).listen(process.env.PORT || 5000);
-
-executeAutomationScript();
