@@ -103,7 +103,7 @@ var executeAutomationScript = function () {
 var sendSms = function (text) {
 
     console.log("Sending sms...");
-    var timestamp = new Date().toLocaleString();
+    var timestamp = new Date().toUTCString();
     twilio.sendMessage({
 
         to: '+919999980842',
@@ -136,4 +136,7 @@ eventEmitter.on('kill_driver', function () {
     setInterval(executeAutomationScript, 3600000);
 });
 
+setInterval(function () {
+    console.log("Rebinding to port...");
+}, 30000);
 executeAutomationScript();
