@@ -142,6 +142,10 @@ var executeAutomationScript = function () {
                         eventEmitter.emit('result_changed', current_result);
                         eventEmitter.emit('kill_driver');
                     });
+            },
+            function (err) {
+                console.log("Element not found, exiting..." + err.message);
+                throw new Error("Element not found, exiting...");
             });
     } catch (err) {
         console.error("******ExecuteAutomationScript--->error: " + err.message);
