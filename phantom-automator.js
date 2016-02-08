@@ -184,7 +184,7 @@ eventEmitter.on('kill_driver', function () {
         console.log('Could not kill.' + err.message);
         //throw new Error("Driver could not be killed.")
     });
-    setTimeout(executeAutomationScript, 5000);
+    setTimeout(executeAutomationScript, 3 * 60 * 60 * 1000);
 });
 
 executeAutomationScript();
