@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -73,4 +72,3 @@ node_modules
 
 #API specific configuration
 my-config.js
->>>>>>> 8997f4d3703ce2b7c1a79882f73b2a74f5d6042d
